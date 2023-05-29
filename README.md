@@ -30,6 +30,7 @@
 
 ```bash
 $ yarn install
+$ yarn build
 ```
 
 ## Running the app
