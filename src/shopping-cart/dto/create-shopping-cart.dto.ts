@@ -1,16 +1,15 @@
-import { IsArray, IsNumber, IsString } from 'class-validator';
+import { IsArray, IsNumber, IsOptional, IsString } from 'class-validator';
 
 export class CreateShoppingCartDto {
-  // @IsString()
-  // shoppingCartId: string;
-
   @IsString()
   userId: string;
 
   @IsNumber()
+  @IsOptional()
   totalPrice: number;
 
   @IsNumber()
+  @IsOptional()
   totalQuantity: number;
 
   @IsArray()
